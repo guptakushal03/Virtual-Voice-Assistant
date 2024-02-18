@@ -28,7 +28,7 @@ def takeCommand():
 
 def ai(content):
     text = f"OpenAI response for Prompt: {content}\n\n"
-    openai.api_key = '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'
+    openai.api_key = '''YOUR API KEY'''
 
     response = openai.ChatCompletion.create(
         model="gpt-3.5-turbo",
@@ -46,15 +46,15 @@ def ai(content):
     )
 
     text += response["choices"][0]["message"]["content"]
-    if not os.path.exists('OpenAI'):
-        os.mkdir("OpenAI")
+    if not os.path.exists('Responses'):
+        os.mkdir("Responses")
     
-    with open(f"Openai/{''.join(content).strip()}.txt", "w") as f:
+    with open(f"Responses/{''.join(content).strip()}.txt", "w") as f:
         f.write(text)
 
 
 def ai_chatBot(content):
-    openai.api_key = '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'
+    openai.api_key = '''YOUR API KEY'''
         
     response = openai.ChatCompletion.create(
         model="gpt-3.5-turbo",
