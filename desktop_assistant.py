@@ -5,6 +5,7 @@ import datetime
 import subprocess
 import os
 import openai
+import sys
 
 
 def say(text):
@@ -29,6 +30,10 @@ def takeCommand():
 def ai(content):
     text = f"OpenAI response for Prompt: {content}\n\n"
     openai.api_key = '''YOUR API KEY'''
+        
+    if not openai.api_key:
+        print("Error: OpenAI API key is not provided.")
+        sys.exit(1)
 
     response = openai.ChatCompletion.create(
         model="gpt-3.5-turbo",
@@ -55,6 +60,10 @@ def ai(content):
 
 def ai_chatBot(content):
     openai.api_key = '''YOUR API KEY'''
+        
+    if not openai.api_key:
+        print("Error: OpenAI API key is not provided.")
+        sys.exit(1)
         
     response = openai.ChatCompletion.create(
         model="gpt-3.5-turbo",
