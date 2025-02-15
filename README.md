@@ -37,3 +37,8 @@ Contributions to enhance the functionality, improve code quality, or fix bugs ar
 ## Disclaimer
 
 This script is provided for educational and demonstration purposes only. Use it responsibly and be mindful of privacy and security considerations while interacting with external services and APIs.
+
+---
+
+## License
+This project is open-source and available under the MIT License.
