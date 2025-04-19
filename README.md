@@ -1,4 +1,4 @@
-# Voice-Controlled Desktop Assistant with AI Chat Integration
+# Virtual Voice Assistant
 
 This Python script creates a voice-controlled desktop assistant with additional features for interacting with OpenAI's GPT-3.5 model for AI-driven chat conversations. The assistant utilizes various libraries and modules for speech recognition, text-to-speech conversion, web browsing, application launching, and interaction with external APIs.
 
